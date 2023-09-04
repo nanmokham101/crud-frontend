@@ -1,0 +1,15 @@
+<mat-dialog-content>
+    <header>
+      <h6>Enter Quote id to delete</h6>
+    </header>
+    <p style="margin-top: 25px;">
+      <mat-form-field>
+        <input matInput [(ngModel)]="quoteIdToDelete">
+      </mat-form-field>
+    </p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button class="btn btn-danger" (click)="deleteQuote()" matDialogClose>Delete</button>
+    <button mat-raised-button class="btn btn-default" matDialogClose>Cancel</button>
+  
+  </mat-dialog-actions>
